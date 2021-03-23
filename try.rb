@@ -1,13 +1,6 @@
-puts("este programa te dira si un numero es multiplo de otro \n
-    primero ingresa el multiplo
-    despues ingresa el numero")
-    
-multiplo = gets.to_i
-num = gets.to_i
+#transformacion de elementos a integer
+a = ARGV[].count
 
-if num % multiplo == 0
-        puts("#{num} si es multiplo de #{multiplo}")
-    else
-        puts("#{num } no es un multiplo de #{multiplo}")
+n.times do |i|
+    ARGV[i] = ARGV[i].to_i #se iteran los elementos y son transformados
 end
-    
