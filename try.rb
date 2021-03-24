@@ -1,6 +1,11 @@
-#transformacion de elementos a integer
-a = ARGV[].count
+n_user = gets.to_i/2
+i = 0
 
-n.times do |i|
-    ARGV[i] = ARGV[i].to_i #se iteran los elementos y son transformados
+n_user.times do |i|
+    if i.even?
+        print"**"
+    else
+        print".."
+    end
+    i+=1
 end

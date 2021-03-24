@@ -12,6 +12,7 @@ comandos:
     "" --> array que permite interpolacion
     \t --> tabular texto
     =begin =end --> comentarios multi linea
+    sleep --> permite darle una pausa al programa (sleep 1 -> esperar 1 seg)
 
 ARGV[0] --> para recibir un dato ingresado en la ejecucion del programa(este sera un array) (ej: a = ARGV[0])(se puede transformar.to_i .to_f .to_s etc)
 Metodos:
@@ -33,3 +34,4 @@ operadores logicos
     && --> y (1° condicion y 2°)
     || --> o
     % --> modulo -> retorno del resto de la division
+    += --> a+=1 -> a suma 1 y guarda el valor en a
