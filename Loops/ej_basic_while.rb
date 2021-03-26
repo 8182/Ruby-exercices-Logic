@@ -5,7 +5,7 @@ numero = gets.to_i
 
 while numero < 1 || numero > 10
     puts "ingresaste un numero fuera del rango"
-    puts "ingresa nuevamente un valor entre 0 y 10"
+    puts "ingresa nuevamente un valor entre 1 y 10"
     numero = gets.to_i
 end
 

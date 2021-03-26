@@ -1,11 +1,11 @@
-n_user = gets.to_i/2
-i = 0
+$age = rand(50)
+def val_edad(age)
 
-n_user.times do |i|
-    if i.even?
-        print"**"
+    if age >= 18
+        puts"es mayor de 18"
     else
-        print".."
+        puts"es menor de 18"
     end
-    i+=1
 end
+
+puts val_edad
