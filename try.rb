@@ -1,11 +1,7 @@
-$age = rand(50)
-def val_edad(age)
+a = {'name' => 'brayan', 'location' => 'chile'}
 
-    if age >= 18
-        puts"es mayor de 18"
-    else
-        puts"es menor de 18"
-    end
-end
+#a['last_name'] = "valdebenito"
 
-puts val_edad
+
+a["name"] = "sergio"
+puts a
