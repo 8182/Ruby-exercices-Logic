@@ -1,7 +1,9 @@
-a = {'name' => 'brayan', 'location' => 'chile'}
+class Empresa
+    
+    attr_reader :nombre
+    attr_accessor :direccion
+    
+end
 
-#a['last_name'] = "valdebenito"
-
-
-a["name"] = "sergio"
-puts a
+sushi = Empresa.new
+saludo = "saludos"

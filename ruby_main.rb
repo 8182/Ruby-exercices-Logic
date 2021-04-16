@@ -9,6 +9,13 @@
     #para declarar una varible global se usa $varible
     #no es recomendable usar muchas variables globales ya que pueden romper el codigo al nombrar una con un nombre ya usado
     # parar cargar un archivo en irb: irb -r ./foo.rb
+    #se pueden crear objetos dandoles una clase, estos seran una instancia de esa clase y podran usar los metodos que contenga esta clase
+    #los metodos de instancia solo pueden ser ocupados en instancias, no en global o nisiquiera ser usados en la clase, solo en la instancias de este
+    #las variables de instancia no pueden ser usadas si no se les a dado un  valor con algun metodo antes.
+    #para acceder a una variable de instancia se debe hacer a travez de un metodo (principio de encapsulacion)
+    #solo se le puede dar el valor a una variable de instancia a travez de un metodo, nunca de otra forma, esto responde al principio de encapsulacion
+    #constructor --> encargado de darle el valor inicial a una variable de instancia, es ejecutado al comienzo del programa
+    # 
 comandos:
     -e --> se puede crear directamente un programa de ruby junto al comando -e ej: ruby -e "print 'hola mundo'"
     \n --> salto de linea (tiene que ser dentro de un array "")
@@ -19,6 +26,12 @@ comandos:
     sleep --> permite darle una pausa al programa (sleep 1 -> esperar 1 seg)
     break --> compre un ciclo, alcanzando a ejecutar el codigo hasta donde se de el break
     ARGV[0] --> para recibir un dato ingresado en la ejecucion del programa(este sera un array) (ej: a = ARGV[0])(se puede transformar.to_i .to_f .to_s etc)
+    Class --> creacion de una clase, suelen contener metodos para ser usados en las instancias.
+    @estado --> valores guardados en variables (un array por ej), pero su nombre real es variable de instancia
+    attr_accessor :metodo --> mejor creacion de getter y setter para una variable global
+    attr_reader :met --> getter
+    attr_writer :met --> setter
+    initialize --> meotodo constructor, este 
 
 Metodos:
     .each --> recorre cada elemento del array
@@ -32,6 +45,8 @@ Metodos:
     .upcase --> transforma todo un string a mayusculas
     .downcase --> lo contrario a upcase (transforma todo a minusculas)
     .sample --> toma una muestra de un array (se le puede dar la cantidad de elementos a tomar, contando desde el 1 ej: a=[1,2,3,4,5].sample(2)#=> [5,4])
+    .include?(x) --> evaluacion booleana de si incluye este elemento
+    .method --> muestra los metodos disponible de la clase
     while --> ejecuta un bloque hasta que la condicion sea evaluada como false
     until --> contrario a while, ejecuta el bloque hasta que la condicion sea tr
     next --> se suele usar para saltar una iteracion, bajo alguna instruccion dada
