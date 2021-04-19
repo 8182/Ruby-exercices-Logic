@@ -1,9 +1,5 @@
-class Empresa
-    
-    attr_reader :nombre
-    attr_accessor :direccion
-    
-end
+require_relative 'plano_avance'
 
-sushi = Empresa.new
-saludo = "saludos"
+p1 = Mapa.new(4,5)
+
+puts p1.avanzar_x

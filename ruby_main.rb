@@ -15,7 +15,7 @@
     #para acceder a una variable de instancia se debe hacer a travez de un metodo (principio de encapsulacion)
     #solo se le puede dar el valor a una variable de instancia a travez de un metodo, nunca de otra forma, esto responde al principio de encapsulacion
     #constructor --> encargado de darle el valor inicial a una variable de instancia, es ejecutado al comienzo del programa
-    # 
+    #cuando se crea un constructor, el objeto creado esperara la cantidad de parametros que se le hayan dado al constructor 
 comandos:
     -e --> se puede crear directamente un programa de ruby junto al comando -e ej: ruby -e "print 'hola mundo'"
     \n --> salto de linea (tiene que ser dentro de un array "")
@@ -31,7 +31,8 @@ comandos:
     attr_accessor :metodo --> mejor creacion de getter y setter para una variable global
     attr_reader :met --> getter
     attr_writer :met --> setter
-    initialize --> meotodo constructor, este 
+    initialize --> meotodo constructor,a este se le dan las variables a inicializar.
+    require realative
 
 Metodos:
     .each --> recorre cada elemento del array
