@@ -1,5 +1,16 @@
-require_relative 'plano_avance'
+class Persona
+    attr_accessor :nombre, :mascotas
 
-p1 = Mapa.new(4,5)
+    def initialize(nombre, mascota= nil)
+        @nombre = nombre
+        @mascotas = []
+        @mascotas.push mascota
+    end
+end
 
-puts p1.avanzar_x
+class Mascota
+    attr_accessor :nombre
+    def initialize(nombre)
+        @nombre = nombre
+    end
+end
