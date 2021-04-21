@@ -1,5 +1,5 @@
 class Persona
-    attr_accesor :nombre, :mascota
+    attr_accessor :nombre, :mascota
 
     def initialize(nombre, mascota = nil)
         @nombre = nombre
@@ -7,13 +7,11 @@ class Persona
         @mascotas.push mascota
     end
 end
-
 class Mascota
-    attr_accesor :nombre
+    attr_accessor :nombre
     def initialize(nombre)
         @nombre = nombre
     end
 end
-
 mascota1 = Mascota.new("fito")
 persona1 = Persona.new("alejandro", mascota1)

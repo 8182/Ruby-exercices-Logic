@@ -10,20 +10,7 @@
     #no es recomendable usar muchas variables globales ya que pueden romper el codigo al nombrar una con un nombre ya usado
     # parar cargar un archivo en irb: irb -r ./foo.rb
 
-    ################Objetos####################
 
-    *se pueden crear objetos dandoles una clase, estos seran una instancia de esa clase y podran usar los metodos que contenga esta clase
-    *los metodos de instancia solo pueden ser ocupados en instancias, no en un marco global,estos metodos suelen ser definidos sus accesos con attr_accesor o attr_reader, attr_writer, esto no basta para que el metodo sea creado,se debe crear un costructor
-
-    *las variables de instancia son @variables particulares de cada instancia, el valor de estas solo es entregado a travez de metodos creados,estas nunca son publicas ,siempre deben llevar una asignacion
-    *para acceder a una variable de instancia se debe hacer a travez de un metodo (principio de encapsulacion)
-    *solo se le puede dar el valor a una variable de instancia a travez de un metodo, nunca de otra forma, esto responde al principio de encapsulacion
-    
-    *constructor --> encargado de darle el valor inicial a una variable de instancia,cuando se crea un constructor, el objeto creado esperara la cantidad de parametros que se le hayan dado al constructor, a menos que se le de un valor ej: initialize(edad = 0)
-    *un objeto de un clase puede tomar objetos de otra clase
-    *si se quiere sumar con otro elemento por ej, y mantener el objeto original, se crea un metodo que haga inmutable la instanci, ej:
-    def metodo (sumar = 1)
-        clase.new(@var1, @var2 + sumar) #--> con esto crearemos una nueva instancia, se le deben entregar las mismas variables de instancia que tienen el objeto al cual se le aplica, para que este mantenga esos valores y se le agregue uno nuevo.
 comandos:
     -e --> se puede crear directamente un programa de ruby junto al comando -e ej: ruby -e "print 'hola mundo'"
     \n --> salto de linea (tiene que ser dentro de un array "")
