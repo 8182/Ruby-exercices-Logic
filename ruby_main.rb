@@ -2,7 +2,7 @@
     #comentario de una linea 
     *puts "hola" --> imprime en terminal(tambien existe print, pero este no agrega salto de linea)
     #*al declarar una variable se debe usar "" si no va a ser interpretado como una funcion el string
-    #*para declara una CONSTANTE basta con dar empezar el nombre en mayuscula
+    #*para declara una CONSTANTE basta con  empezar el nombre en mayuscula
     #*orden de prioridad en operaciones --> **(exponenciación) --> * & % & / --> + & -
     #*interpolacion --> texto = "tienes #{edad} años"
     #tipos de alcanze: local, global,de instancia, de clase
@@ -28,6 +28,7 @@ comandos:
     attr_writer :met --> setter
     initialize --> meotodo constructor,a este se le dan las variables a inicializar.
     require realative
+    module MyMath --> creacion de un modulo se usa con MyMath.sumar(x,y)
 
 Metodos:
     .each --> recorre cada elemento del array
