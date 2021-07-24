@@ -1,8 +1,5 @@
 #
-
 cases = [120, 50, 600, 30, 90, 10, 200, 0, 500] #en minutos
-
-
 def cases(array)
     evaluation = []
     n = array.count
@@ -15,7 +12,6 @@ def cases(array)
         end
     end
     evaluation
-    
 end
 
 print "#{cases} \n"
