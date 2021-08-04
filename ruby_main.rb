@@ -1,17 +1,24 @@
-
     #comentario de una linea 
-    *puts "hola" --> imprime en terminal(tambien existe print, pero este no agrega salto de linea)
+    #*puts "hola" --> imprime en terminal(tambien existe print, pero este no agrega salto de linea)
     #*al declarar una variable se debe usar "" si no va a ser interpretado como una funcion el string
-    #*para declara una CONSTANTE basta con  empezar el nombre en mayuscula
+    #*para declaraR una CONSTANTE basta con empezar el nombre en mayuscula
     #*orden de prioridad en operaciones --> **(exponenciación) --> * & % & / --> + & -
     #*interpolacion --> texto = "tienes #{edad} años"
     #tipos de alcanze: local, global,de instancia, de clase
     #para declarar una varible global se usa $varible
     #no es recomendable usar muchas variables globales ya que pueden romper el codigo al nombrar una con un nombre ya usado
     # parar cargar un archivo en irb: irb -r ./foo.rb
+    #en ruby, al ser todo un objeto, se pueden dar metodos incluso a un numero solo, por ej 5.times, para ver los metodos disponible de estas clase usar .methods
+    #todos los metodos que terminan en ? devolveran un valor booleano
+    #los str en ruby se pueden mutar, para modificar un str se puede usar el nombre de la var. que lo almacena y darle el (string = "hola" -> string[0] = "H" -> string -> "Hola" )
+    #solo nil y false son objetos false
+    #como convencion se usa snake_case para los nombres de los metodos
+    #si se crea un if con cualquier elemento que no sea false(false & nill), se considerara true
 
 
 comandos:
+    << -> agregara el string al string izq
+    ! --> bang --> los metodos devuelven una copia de la variable, pero con ! se podran guardar en la variable a la que se le aplica
     -e --> se puede crear directamente un programa de ruby junto al comando -e ej: ruby -e "print 'hola mundo'"
     \n --> salto de linea (tiene que ser dentro de un array "")
     '' --> string que no permite interpolacion
@@ -19,24 +26,28 @@ comandos:
     \t --> tabular texto
     =begin =end --> comentarios multi linea
     sleep --> permite darle una pausa al programa (sleep 1 -> esperar 1 seg)
-    break --> compre un ciclo, alcanzando a ejecutar el codigo hasta donde se de el break
+    break --> rompe un ciclo, alcanzando a ejecutar el codigo hasta donde se de el break
     ARGV[0] --> para recibir un dato ingresado en la ejecucion del programa(este sera un array) (ej: a = ARGV[0])(se puede transformar.to_i .to_f .to_s etc)
-    Class --> creacion de una clase, suelen contener metodos para ser usados en las instancias.
+    i --> creacion de una clase, suelen contener metodos para ser usados en las instancias.
     @estado --> valores guardados en variables (un array por ej), pero su nombre real es variable de instancia
     attr_accessor :metodo --> mejor creacion de getter y setter para una variable global
     attr_reader :met --> getter
     attr_writer :met --> setter
-    initialize --> meotodo constructor,a este se le dan las variables a inicializar.
+    initialize --> metodo constructor,a este se le dan las variables a inicializar.
     require realative
     module MyMath --> creacion de un modulo se usa con MyMath.sumar(x,y)
 
 Metodos:
+    .methods --> muestra los metodos disponible de la clase
+    .class --> indica el nombre de la clase a la que pertenece
     .each --> recorre cada elemento del array
-    .rand(rango_min...rango_max) --> genera numero al aza (rand 100 --> genera un numer al azar del 0 al 100)
+    .odd? --> consulta si el numero es impar
+    .even? --> consulta si el numero es par 
+    .rand(rango_min...rango_max) --> genera numero al azar (rand 100 --> genera un numer al azar del 0 al 100)
     .count(parametro)
     .gets --> toma valor del usuario, con .chomp se quita el salto de linea(ej: a.gets.chomp ---or--- a = gets.chomp)
     .size -->
-    .length --> cuenta el largo de una cadena tomando los espacios y otros
+    .length --> cuenta el largo de una cadena tomando los espacios y otros(parte desde el 1)
     .to_s -- .to_i -- .to_f --> transformacion a string,interger,float respectivamente
     .reverse --> da vuelta un string
     .upcase --> transforma todo un string a mayusculas
@@ -44,10 +55,16 @@ Metodos:
     .sample --> toma una muestra de un array (se le puede dar la cantidad de elementos a tomar, contando desde el 1 ej: a=[1,2,3,4,5].sample(2)#=> [5,4])
     .include?(x) --> evaluacion booleana de si incluye este elemento
     .method --> muestra los metodos disponible de la clase
+    .empty? --> revisa si la variable esta vacia
+    .capitalize --> transforma TODO el string a minusculas menos la primera letra
+    .split --> dividira una variable como hash, si no se le da param, dividira por palabras, tambien puede dividir segun algun caracter o dividir el string por cada letra(ej: "hola".split("") --> ["h","o","l","a"])
+
+
     while --> ejecuta un bloque hasta que la condicion sea evaluada como false
     until --> contrario a while, ejecuta el bloque hasta que la condicion sea tr
     next --> se suele usar para saltar una iteracion, bajo alguna instruccion dada
     return -->  return le entrega al valor a la variable ,el resto del codigo sera no se ejecutara despues del return)
+    when [exprecion logica] then [has esto si when es true ]
 
 Creando un metodo propio:
     -al metodo se le dan parametros, y estos al ser llamados se le entregan argumentos a los parametros

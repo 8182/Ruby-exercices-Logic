@@ -18,4 +18,4 @@ end
 attr_reader :nombre
 attr_accesor :direccion
     
-end
+=end

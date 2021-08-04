@@ -20,7 +20,7 @@ class Canasta
     end
 end  
 
-c1 = Canasta.new(3,2,1)
-c2 = Canasta.new(4,3,2)
+puts c1 = Canasta.new(3,2,1)
+puts c2 = Canasta.new(4,3,2)
 suma_canastas = c1+c2 #ejecucion del metodo +(otra_canasta)
 puts suma_canastas.cantidad_elementos

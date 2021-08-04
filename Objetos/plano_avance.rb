@@ -11,3 +11,4 @@ class Mapa
         @y+= 1
     end
 end
+

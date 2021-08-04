@@ -1,39 +1,43 @@
-#el usuario ingresara un numero,se mostrara desde el 0 hasta ese numero, si es impar el numero en la secuencia sera remplazado por un *
+#crear un porgrama donde se cree la siguiente secuencia **..**..**..**
+i = 0
 
-n_user = gets.to_i
-i= 0 
-
-n_user.times do |i|
-
-    if i % 2 == 0
-        print i
-    else
-        print "*"
+def patron2(i)
+    i.times do |y|
+        if y %4 == 0 || y%4 == 1
+            print"*"
+        else
+            print"."
+        end
     end
-    i+=1
 end
 
--------------------------------with while----------------------
-
-n_user = gets.to_i
-i= 0
-while i < n_user
-    if i.even?
-        print"#{i}"
-    else
-        print"*"
+def patron3(i)
+    i.times do |x|
+        if
+            x%6 == 0 || x%6 ==1 || x%6 == 2
+            print"*"
+        else
+            print"."
+        end
     end
-    i+=1
 end
-----------------------with until--------------------
-n_user = gets.to_i
-i= 0 
 
-until n_user < i
-    if i.even?
-        print"#{i}"
-    else
-        print"*"
+# ..**||..**||..**||
+
+def patronTriple(i)
+    i.times do |z|
+        if z % 6 == 0 || z % 6 == 1
+            print"."
+        elsif z % 6 == 2 || z % 6 ==3 
+            print"*"
+        else
+            print"|"
+        end 
     end
-    i+=1
 end
+
+
+ patron2(12)
+
+# patron3(10)
+#patronTriple(15)

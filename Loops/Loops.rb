@@ -10,6 +10,8 @@ while -> mientras que
 until -> a menos que
 for -> permite iterar en un rango
 .times -> realiza cierta cantidad de veces una accion
+break -> permite salir del bucle segun la condicion que se le de
+next -> saltara el la iteracion segun una condicion logica entregada
 -----------#ej de for-----------------
 for i in 1..10
     puts "iteracion #{i}"

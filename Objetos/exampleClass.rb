@@ -16,3 +16,5 @@ hija = Hija.new(padre.nombre)
 
 puts padre.nombre
 puts hija.nombre #aqui llamara a la instancia padre, de la clase Padre, y le agregara el "jr"
+
+

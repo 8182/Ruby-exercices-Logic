@@ -18,7 +18,7 @@
 
         Accesos: existen metodos abreviados en ruby para crear un setter y un getter, estos son attr_reader(getter), attr_writer(setter), y attr_accessor que permite ambas
 
-        Constructor: un constructor obliga a que cuando se cree una instancia, se ingresen cierta cantidad de parametros definidos si no, no se podra crear la instancia, a menos que se le den valores predefinidos al constructor, en caso de no ser llenado los parametros
+        Constructor: un constructor obliga a que cuando se cree una instancia, se ingresen cierta cantidad de parametros definidos si no, no se podra crear la instancia, a menos que se le den valores predefinidos al constructor, en caso de no ser llenado los parametros, se crea con initialize param1, param2
         
         Mutabilidad: los objetos en ruby son mutables,esto quiere decir que se puede cambiar sus parametros a travez de metodos, tambien se pueden crear objetos inmutables al quitarle el setter, y dandole los parametros con el constructor, ademas se debe crear una copia del objeto en caso de ser operado a otro objeto, mantiendo el objeto original
 
@@ -26,7 +26,7 @@
 
         *un objeto de un clase puede tomar objetos de otra clase
 
-        Super: instrucion que usa un metodo heredado, devuelve el mismo bloque de codigo que el padre, en el lugar que se quiera y con alguna modificacion si asi se requiere
+        Super: instrucion que usa un metodo heredado, devuelve el mismo bloque de codigo que el padre, en el lugar que se requiera y con alguna modificacion si asi se requiere
         
         Variable_de_clase: @@ las variables de clase son definidas en el main de la clase, se pueden usar para contar la creacion de instancias por ej.
         
@@ -98,7 +98,6 @@ class Persona
     def initialize(name) #inicializacion del argumento persona
         puts "creando nueva persona llamada #{name}" #interpolacion del argumento
     end
-
 *********************
     def initialize(num1, num2)#se inicializaran estos parametros
     end

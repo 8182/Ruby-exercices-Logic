@@ -1,5 +1,5 @@
 class Mascota
-    attr_accesor :nombre
+    attr_accessor :nombre
     def saludar
         puts "guau!"
     end
