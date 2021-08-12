@@ -34,7 +34,9 @@ comandos:
     attr_reader :met --> getter
     attr_writer :met --> setter
     initialize --> metodo constructor,a este se le dan las variables a inicializar.
-    require realative
+    require --> carga un archivo con el nombre dado,si el archivo tiene alguna ejecucion en main, esta se mostrara solo una vez si se carga varias veces el archivo (carga todos los datos de el), ademas primero buscara los ficheros .rb
+    load -->  similar a require, salvo que ejecutara el ambiente main cada vez que sea llamado (es mas usado cuando se esta probando la aplicacion y haciendo cambios a la vez)
+    require realative --> complemento de require
     module MyMath --> creacion de un modulo se usa con MyMath.sumar(x,y)
 
 Metodos:
