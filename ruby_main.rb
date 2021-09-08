@@ -59,7 +59,8 @@ Metodos:
     .method --> muestra los metodos disponible de la clase
     .empty? --> revisa si la variable esta vacia
     .capitalize --> transforma TODO el string a minusculas menos la primera letra
-    .split --> dividira una variable como hash, si no se le da param, dividira por palabras, tambien puede dividir segun algun caracter o dividir el string por cada letra(ej: "hola".split("") --> ["h","o","l","a"])
+    .split --> dividira una variable como array, si no se le da param, dividira por palabras (""
+    ), tambien puede dividir segun algun caracter o dividir el string por cada letra(ej: "hola".split("") --> ["h","o","l","a"])
 
 
     while --> ejecuta un bloque hasta que la condicion sea evaluada como false
